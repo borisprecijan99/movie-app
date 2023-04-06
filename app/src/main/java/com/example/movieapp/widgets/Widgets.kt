@@ -198,7 +198,7 @@ fun MovieImages(movie: Movie) {
     )
     LazyRow {
         items(movie.images) { imageUrl ->
-            Surface(elevation = 4.dp, modifier = Modifier.size(300.dp)) {
+            Surface(elevation = 4.dp) {
                 AsyncImage(
                     modifier = Modifier.size(300.dp),
                     model = imageUrl, contentDescription = "Movie Image"
